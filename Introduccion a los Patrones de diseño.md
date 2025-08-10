@@ -1,13 +1,13 @@
 
 ---
 
-## 🧩 **Patrones de Diseño (Design Patterns)**
+##  **Patrones de Diseño (Design Patterns)**
 
 Los patrones de diseño se clasifican en **tres categorías principales** según la clasificación de la “Banda de los Cuatro” (GoF):
 
 ---
 
-### 1️⃣ **Patrones Creacionales**
+### 1 **Patrones Creacionales**
 
 Se enfocan en **cómo crear objetos** de forma flexible y reutilizable.
 
@@ -21,7 +21,7 @@ Se enfocan en **cómo crear objetos** de forma flexible y reutilizable.
 
 ---
 
-### 2️⃣ **Patrones Estructurales**
+### 2 **Patrones Estructurales**
 
 Se centran en **cómo se organizan y relacionan las clases y objetos**.
 
@@ -37,7 +37,7 @@ Se centran en **cómo se organizan y relacionan las clases y objetos**.
 
 ---
 
-### 3️⃣ **Patrones de Comportamiento**
+### 3 **Patrones de Comportamiento**
 
 Se enfocan en **cómo interactúan y se comunican los objetos**.
 
@@ -56,5 +56,13 @@ Se enfocan en **cómo interactúan y se comunican los objetos**.
 | **Visitor**                 | Permite agregar operaciones a objetos sin cambiar su clase.                                 |
 
 ---
+
+
+Sitios recomendados:
+
+https://refactoring.guru/es/design-patterns
+
+https://sourcemaking.com/design_patterns
+
 
 
