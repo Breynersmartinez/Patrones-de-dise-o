@@ -1,3 +1,5 @@
+package Exercise1DocumentConverter;
+
 public interface Converter
 {
 

@@ -1,3 +1,5 @@
+package Exercise1DocumentConverter;
+
 public class PDFConverter implements Converter{
      public void makeLine()
     {

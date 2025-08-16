@@ -1,3 +1,5 @@
+package Exercise1DocumentConverter;
+
 public class PostScriptConverter implements Converter{
 
      public void makeLine()
