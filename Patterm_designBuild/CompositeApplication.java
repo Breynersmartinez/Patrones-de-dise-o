@@ -1,19 +1,22 @@
 package com;
 
+
 public class CompositeApplication {
 public static void main(String args[])
 {
 // create de main department 
-Department Sales = new SalesDepartment(1, "Sales Department");
+Department salesDepartment = new SalesDepartment(1, "Sales Department");
 
 // create subdepartments 
-Department Head = new HeadDepartment(2, "Head Department");
-Department Financial = new FinancialDepartment(3, "Financial Department");
+HeadDepartment headDepartment = new HeadDepartment(2, "Head Department");
+Department financialDepartment = new FinancialDepartment(3, "Financial Department");
 
 // print the department names
-Sales.printDepartmentName();
-Head.printDepartmentName();
-Financial.printDepartmentName();
+headDepartment.addDepartment(salesDepartment);
+//
+headDepartment.addDepartment(financialDepartment);
+
+headDepartment.printDepartmentName();
 
 
 }
