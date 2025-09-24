@@ -18,10 +18,6 @@ headDepartment.addDepartment(financialDepartment);
 
 headDepartment.printDepartmentName();
 
-
-
-
-
-
 }
 }
+
