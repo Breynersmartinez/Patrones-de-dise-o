@@ -9,14 +9,21 @@ public class HeadDepartment implements Department {
 
     private String namedepartment;
 
+ 
+
+   
+
     //Child departments list es para guardar los subdepartamentos
     private List<Department> childDepartments;
+
+    Scanner scanner = new Scanner(System.in);
     
-public HeadDepartment(int id, String namedepartment)
+public HeadDepartment(int id, String namedepartment, Scanner scanner)
 {
 this.id=id;
 this.namedepartment=namedepartment;
 this.childDepartments = new  ArrayList<>();
+this.scanner = scanner;
 }
 
 
@@ -33,7 +40,11 @@ this.childDepartments = new  ArrayList<>();
  // Method to add a child department (metodo para agregar un subdepartamento)
  public void addDepartment(Department department)
  {
+ 
+
   childDepartments.add(department);
+
+
  }
 
  // Method to remove a child department (metodo para eliminar un subdepartamento)
@@ -43,6 +54,36 @@ public void removeDepartment(Department department)
         childDepartments.remove(department);
  
 }
+
+/*
+  
+public void autenticate()
+{
+    System.out.println("Ingrese la contraseña de administrador:");
+    String passwordInput = scanner.nextLine();
+    if (passwordInput.equals("admin123")) {
+        isAuthenticated = true;
+        System.out.println("Autenticación exitosa.");
+    } else {
+       
+        System.out.println("Contraseña incorrecta. Acceso denegado.");
+    }
+     
+
+}
+
+
+
+    */
+
+public String toString()
+{
+    return " HeadDepartment { id= "+id+", namedepartment= "+namedepartment+" } ";
+
+
+}
+
+
 
 }
 
