@@ -1,10 +1,13 @@
 package com;
 
+import java.util.*;
+import java.util.Scanner;
 
 public class CompositeApplication {
 public static void main(String args[])
 {
-// create de main department 
+
+
 Department salesDepartment = new SalesDepartment(1, " Sales Department ");
 
 // create subdepartments 
