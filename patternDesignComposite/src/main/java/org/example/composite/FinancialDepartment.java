@@ -1,17 +1,19 @@
-package com;
+package org.example.composite;
 
-public class FinancialDepartment implements Department {
+
+
+    public class FinancialDepartment implements Department {
 
     private int id;
 
     private String namedepartment;
 
-public FinancialDepartment(int id, String namedepartment)
-{
-this.id=id;
-this.namedepartment=namedepartment;
+    public FinancialDepartment(int id, String namedepartment)
+    {
+    this.id=id;
+    this.namedepartment=namedepartment;
 
-}
+    }
 
 
 

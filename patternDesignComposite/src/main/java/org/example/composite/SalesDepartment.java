@@ -1,4 +1,6 @@
-package com;
+package org.example.composite;
+
+
 
 public class SalesDepartment implements Department {
 
@@ -7,11 +9,11 @@ public class SalesDepartment implements Department {
     private String namedepartment;
 
     public SalesDepartment(int id, String namedepartment)
-{
-this.id=id;
-this.namedepartment=namedepartment;
+    {
+    this.id=id;
+    this.namedepartment=namedepartment;
 
-}
+    }
 
 
     @Override

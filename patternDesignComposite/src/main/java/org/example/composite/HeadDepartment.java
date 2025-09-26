@@ -1,5 +1,7 @@
 
-package com;
+package org.example.composite;
+
+
 import java.util.*;
 
 public class HeadDepartment implements Department {
@@ -9,51 +11,40 @@ public class HeadDepartment implements Department {
 
     private String namedepartment;
 
- 
-
-   
 
     //Child departments list es para guardar los subdepartamentos
     private List<Department> childDepartments;
 
-    Scanner scanner = new Scanner(System.in);
-    
-public HeadDepartment(int id, String namedepartment, Scanner scanner)
-{
-this.id=id;
-this.namedepartment=namedepartment;
-this.childDepartments = new  ArrayList<>();
-this.scanner = scanner;
-}
+
+    public HeadDepartment(int id, String namedepartment)
+    {
+    this.id=id;
+    this.namedepartment=namedepartment;
+    this.childDepartments = new  ArrayList<>();
+
+    }
 
 
 
-
-
- @Override
- // Method to print the department name (metodo para imprimir el nombre del departamento)
- public void printDepartmentName() 
- {
+    @Override
+    // Method to print the department name (metodo para imprimir el nombre del departamento)
+    public void printDepartmentName()
+    {
     childDepartments.forEach(Department::printDepartmentName);
- }
+     System.out.println(getClass().getSimpleName());
+    }
 
- // Method to add a child department (metodo para agregar un subdepartamento)
- public void addDepartment(Department department)
- {
- 
+    // Method to add a child department (metodo para agregar un subdepartamento)
+    public void addDepartment(Department department)
+    {
+    childDepartments.add(department);
+    }
 
-  childDepartments.add(department);
-
-
- }
-
- // Method to remove a child department (metodo para eliminar un subdepartamento)
-public void removeDepartment(Department department)
-{
-   
+    // Method to remove a child department (metodo para eliminar un subdepartamento)
+        public void removeDepartment(Department department)
+        {
         childDepartments.remove(department);
- 
-}
+        }
 
 /*
   
@@ -68,17 +59,14 @@ public void autenticate()
        
         System.out.println("Contraseña incorrecta. Acceso denegado.");
     }
-     
+
 
 }
-
-
-
     */
 
 public String toString()
 {
-    return " HeadDepartment { id= "+id+", namedepartment= "+namedepartment+" } ";
+    return " Department { id= "+id+", namedepartment= "+namedepartment+" } ";
 
 
 }

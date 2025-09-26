@@ -6,16 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-      </profile>
-      <profile name="Annotation profile for ExamplePatterDesignDecorator" enabled="true">
-        <sourceOutputDir name="../ExamplePatternDesignComposite/ExamplePatterDesignDecorator/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../ExamplePatternDesignComposite/ExamplePatterDesignDecorator/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="ExamplePatterDesignDecorator" />
+        <module name="patternDesignComposite" />
+        <module name="patternDesignDecorator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Bridge" target="23" />
+      <module name="ExamplePatterDesignDecorator" target="23" />
       <module name="ExamplePatternDesignComposite" target="23" />
       <module name="patternAdapte" target="23" />
       <module name="structuralPatternsAdapter" target="23" />

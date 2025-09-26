@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/Bridge/pom.xml" />
         <option value="$PROJECT_DIR$/patternAdapte/pom.xml" />
         <option value="$PROJECT_DIR$/ExamplePatternDesignComposite/pom.xml" />
+        <option value="$PROJECT_DIR$/patternDesignComposite/pom.xml" />
+        <option value="$PROJECT_DIR$/patternDesignDecorator/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
