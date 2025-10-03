@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/ExamplePatternDesignComposite/pom.xml" />
         <option value="$PROJECT_DIR$/patternDesignComposite/pom.xml" />
         <option value="$PROJECT_DIR$/patternDesignDecorator/pom.xml" />
+        <option value="$PROJECT_DIR$/patternDesignSingleton/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

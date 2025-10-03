@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="patternDesignComposite" />
         <module name="patternDesignDecorator" />
+        <module name="patternDesignSingleton" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

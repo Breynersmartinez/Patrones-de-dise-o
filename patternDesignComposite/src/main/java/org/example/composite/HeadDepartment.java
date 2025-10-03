@@ -30,8 +30,9 @@ public class HeadDepartment implements Department {
     // Method to print the department name (metodo para imprimir el nombre del departamento)
     public void printDepartmentName()
     {
+        System.out.println(namedepartment);
     childDepartments.forEach(Department::printDepartmentName);
-     System.out.println(getClass().getSimpleName());
+
     }
 
     // Method to add a child department (metodo para agregar un subdepartamento)
@@ -64,15 +65,15 @@ public void autenticate()
 }
     */
 
-public String toString()
-{
-    return " Department { id= "+id+", namedepartment= "+namedepartment+" } ";
 
-
-}
-
-
-
+    @Override
+    public String toString() {
+        return "HeadDepartment{" +
+                "id=" + id +
+                ", namedepartment='" + namedepartment + '\'' +
+                ", childDepartments=" + childDepartments +
+                '}';
+    }
 }
 
 

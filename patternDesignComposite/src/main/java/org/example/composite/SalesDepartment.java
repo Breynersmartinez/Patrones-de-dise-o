@@ -19,6 +19,6 @@ public class SalesDepartment implements Department {
     @Override
     // Method to print the department name (metodo para imprimir el nombre del departamento)
     public void printDepartmentName() {
-        System.out.println(getClass().getSimpleName());
+        System.out.println(namedepartment);
     }
 }

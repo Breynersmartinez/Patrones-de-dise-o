@@ -13,7 +13,7 @@ public class GpsDecorator extends CarDecorator{
     @Override
     public String getDescription()
     {
-        return vehicle.getDescription() + ", con Gps ";
+        return vehicle.getDescription() + ", Con Gps ";
     }
 
     @Override

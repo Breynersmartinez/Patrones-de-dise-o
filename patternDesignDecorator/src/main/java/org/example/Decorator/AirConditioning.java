@@ -10,7 +10,7 @@ public class AirConditioning extends CarDecorator{
     @Override
     public String getDescription()
     {
-        return vehicle.getDescription() + ", con Aire acondicionado ";
+        return vehicle.getDescription() + ", Con aire acondicionado ";
     }
 
     @Override

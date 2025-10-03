@@ -49,8 +49,8 @@ public class CompositeSimulation {
         System.out.println(" Digite el id del departamento: ");
         int id = scanner.nextInt();
 
-        headDepartment = new HeadDepartment(id, namedepartment);
-        headDepartment.addDepartment(headDepartment);
+        Department newDepartment = new SalesDepartment(id, namedepartment);
+        headDepartment.addDepartment(newDepartment);
 
 
         System.out.println(headDepartment.toString());
