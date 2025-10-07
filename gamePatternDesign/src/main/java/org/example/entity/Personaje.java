@@ -1,12 +1,13 @@
 package main.java.org.example.entity;
-
+import main.java.org.example.strategy.Strategy;
 
 
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Personaje {
+@SuppressWarnings("ALL") // Notacion para suprimir todas las advertencias del compilador
+public class Personaje implements Strategy{
 
     private String nombre;
     private int puntosDeVida;
@@ -18,6 +19,7 @@ public class Personaje {
         this.puntosDeVida = 100; // Todos comienzan con 100puntos de vida
     } // Metodo para realizar un ataque a otro personaje
 
+    @Override
     public void atacar(Personaje oponente) {
         Random rand = new Random();
         int dano = rand.nextInt((MAX_DANO - MIN_DANO) + 1) +
@@ -28,7 +30,7 @@ public class Personaje {
     }
 
     // Metodo para recibir dano
-
+    @Override
     public void recibirDano(int dano) {
         this.puntosDeVida -= dano;
         if (this.puntosDeVida < 0) {
@@ -37,15 +39,16 @@ public class Personaje {
     } 
     
     // Verifica si el personaje sigue vivo
-
+    @Override
     public boolean estaVivo() {
         return this.puntosDeVida > 0;
     } // Devuelve el nombre del personaje
 
+    @Override
     public String getNombre() {
         return this.nombre;
     } // Devuelve los puntos de vida actuales
-
+    @Override
     public int getPuntosDeVida() {
         return this.puntosDeVida;
     }
