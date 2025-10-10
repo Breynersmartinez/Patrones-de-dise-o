@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="patternDesignComposite" />
         <module name="patternDesignDecorator" />
-        <module name="fighthingGameWhitPatterDesign" />
         <module name="patternDesignSingleton" />
       </profile>
     </annotationProcessing>
@@ -16,6 +15,7 @@
       <module name="Bridge" target="23" />
       <module name="ExamplePatterDesignDecorator" target="23" />
       <module name="ExamplePatternDesignComposite" target="23" />
+      <module name="fighthingGameWhitPatterDesign" target="23" />
       <module name="patternAdapte" target="23" />
       <module name="structuralPatternsAdapter" target="23" />
     </bytecodeTargetLevel>
