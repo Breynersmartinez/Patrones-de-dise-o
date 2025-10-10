@@ -2,23 +2,21 @@ package org.example.Decorator;
 
 import org.example.Simulation.FormatCopColombia;
 
-public abstract class CarDecorator implements Vehicle{
+public abstract class CarDecorator implements Vehicle {
     protected Vehicle vehicle;
 
 
     public CarDecorator(Vehicle vehicle) {
-       this.vehicle = vehicle;
+        this.vehicle = vehicle;
     }
 
 
-    public String getDescription()
-    {
+    public String getDescription() {
         return vehicle.getDescription();
     }
 
 
-    public Double getCost()
-    {
+    public Double getCost() {
         return vehicle.getCost();
     }
 

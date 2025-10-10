@@ -16,36 +16,31 @@ public class HeadDepartment implements Department {
     private List<Department> childDepartments;
 
 
-    public HeadDepartment(int id, String namedepartment)
-    {
-    this.id=id;
-    this.namedepartment=namedepartment;
-    this.childDepartments = new  ArrayList<>();
+    public HeadDepartment(int id, String namedepartment) {
+        this.id = id;
+        this.namedepartment = namedepartment;
+        this.childDepartments = new ArrayList<>();
 
     }
-
 
 
     @Override
     // Method to print the department name (metodo para imprimir el nombre del departamento)
-    public void printDepartmentName()
-    {
+    public void printDepartmentName() {
         System.out.println(namedepartment);
-    childDepartments.forEach(Department::printDepartmentName);
+        childDepartments.forEach(Department::printDepartmentName);
 
     }
 
     // Method to add a child department (metodo para agregar un subdepartamento)
-    public void addDepartment(Department department)
-    {
-    childDepartments.add(department);
+    public void addDepartment(Department department) {
+        childDepartments.add(department);
     }
 
     // Method to remove a child department (metodo para eliminar un subdepartamento)
-        public void removeDepartment(Department department)
-        {
+    public void removeDepartment(Department department) {
         childDepartments.remove(department);
-        }
+    }
 
 /*
   

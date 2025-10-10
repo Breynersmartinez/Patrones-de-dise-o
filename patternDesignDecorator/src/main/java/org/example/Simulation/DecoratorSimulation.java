@@ -7,8 +7,7 @@ import org.example.Decorator.Vehicle;
 
 public class DecoratorSimulation {
 
-    public void simulation()
-    {
+    public void simulation() {
 
         FormatCopColombia pcop = new FormatCopColombia();
 
@@ -26,7 +25,6 @@ public class DecoratorSimulation {
         car = new AirConditioning( new GpsDecorator(new BasicCar()));
         System.out.println(car.getDescription() + " -> $ " + car.getCost());
 */
-
 
 
     }

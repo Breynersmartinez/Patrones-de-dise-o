@@ -102,13 +102,13 @@ Carro basico, con Aire acondicionado, con Gps -> $46.100.000
 
 ##  ¿Por qué es Decorator?
 
-* Porque **no cambiaste la clase `BasicCar`**, sino que usaste objetos adicionales para **agregarle comportamiento nuevo**.
+* Porque **no se cambio  la clase `BasicCar`**, sino que usaste objetos adicionales para **agregarle comportamiento nuevo**.
 * Puedes combinar decoradores en cualquier orden (`new AirConditioning(new GpsDecorator(new BasicCar()))`) sin necesidad de crear nuevas subclases para cada variante.
 * Sigues el **principio abierto/cerrado (OCP)**: tu clase `BasicCar` no cambia, pero puedes añadirle funcionalidades.
 
 ---
 
- **Explicación para tu exposición:**
+ 
 "Implementé el patrón **Decorator** para extender dinámicamente las características de un vehículo.
 La interfaz `Vehicle` define el contrato básico.
 `BasicCar` es el componente concreto.

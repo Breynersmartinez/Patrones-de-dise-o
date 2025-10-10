@@ -6,14 +6,12 @@ public class BasicCar implements Vehicle {
 
 
     @Override
-    public String getDescription()
-    {
+    public String getDescription() {
         return "Carro basico";
     }
 
     @Override
-    public Double  getCost()
-    {
+    public Double getCost() {
         return 45500000.00;
     }
 

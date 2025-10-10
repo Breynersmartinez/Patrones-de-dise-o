@@ -3,7 +3,7 @@ package org.example.Decorator;
 import org.example.Simulation.FormatCopColombia;
 
 
-public class GpsDecorator extends CarDecorator{
+public class GpsDecorator extends CarDecorator {
 
 
     public GpsDecorator(Vehicle vehicle) {
@@ -11,14 +11,12 @@ public class GpsDecorator extends CarDecorator{
     }
 
     @Override
-    public String getDescription()
-    {
+    public String getDescription() {
         return vehicle.getDescription() + ", Con Gps ";
     }
 
     @Override
-    public Double getCost()
-    {
+    public Double getCost() {
         return vehicle.getCost() + 450000.00;
     }
 
