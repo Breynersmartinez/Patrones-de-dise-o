@@ -92,12 +92,68 @@ Ahora que aplicaste **Strategy**, podrías integrar fácilmente:
 
 ---
 
-## En resumen
 
-**Antes (básico):**
 
-* Un solo modo de ataque (10–30).
-* Lógica rígida dentro de la clase `Personaje`.
+
+
+
+
+
+
+
+###  **Cambios realizados**
+
+1. **Se creó una interfaz `ModoAtaque`**
+
+   ```java
+   public interface ModoAtaque {
+       void atacar(Personaje atacante, Personaje oponente);
+   }
+   ```
+
+2. **Se implementaron distintas estrategias**
+   (por ejemplo, ataque rápido, fuerte y mágico):
+
+   ```java
+   public class AtaqueRapido implements ModoAtaque {
+       @Override
+       public void atacar(Personaje atacante, Personaje oponente) {
+           int dano = new Random().nextInt(10, 21);
+           oponente.recibirDano(dano);
+           System.out.println(atacante.getNombre() + " realiza un ataque rápido causando " + dano + " de daño!");
+       }
+   }
+   ```
+
+3. **La clase `Personaje` se modificó para usar un `ModoAtaque`**
+
+   ```java
+   private ModoAtaque modoAtaque;
+
+   public void setModoAtaque(ModoAtaque modoAtaque) {
+       this.modoAtaque = modoAtaque;
+   }
+
+   public void atacar(Personaje oponente) {
+       if (modoAtaque != null) {
+           modoAtaque.atacar(this, oponente);
+       } else {
+           System.out.println(nombre + " no tiene un modo de ataque seleccionado!");
+       }
+   }
+   ```
+
+4. **En `JuegoLucha` se agregó la opción de elegir el modo de ataque**
+   para cada jugador antes de iniciar la pelea.
+
+---
+
+
+---
+
+
+
+
 
 
 ---
