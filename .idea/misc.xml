@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/patternDesignDecorator/pom.xml" />
         <option value="$PROJECT_DIR$/patternDesignSingleton/pom.xml" />
         <option value="$PROJECT_DIR$/fighthingGameWhitPatterDesign/pom.xml" />
+        <option value="$PROJECT_DIR$/gamePatternDesignStrategy/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
