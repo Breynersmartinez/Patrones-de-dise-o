@@ -8,7 +8,7 @@ package org.example.strategy;
 
 public interface EstrategiaAtaque {
 
-    int calcularDano();
-    String getNombreEstrategia();
+    int calcularDano(); //Metoo calcular daño
+    String getNombreEstrategia(); //Traer namobre de la estrategia
 
 }

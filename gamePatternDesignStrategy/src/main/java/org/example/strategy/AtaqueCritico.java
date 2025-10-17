@@ -10,6 +10,8 @@ public class AtaqueCritico implements EstrategiaAtaque {
 
     @Override
     public int calcularDano() {
+
+
         Random rand = new Random();
         if (rand.nextDouble() < PROBABILIDAD_CRITICO) {
             return DANO_CRITICO;

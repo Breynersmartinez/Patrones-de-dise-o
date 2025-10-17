@@ -11,7 +11,7 @@ public class JuegoLucha {
     private Personaje jugador2;
     private Scanner scanner;
 
-    // Constructor
+    // Constructor para inicializar los personajes
     public JuegoLucha(String nombre1, String nombre2) {
         this.scanner = new Scanner(System.in);
 
@@ -25,8 +25,9 @@ public class JuegoLucha {
         this.jugador2 = new Personaje(nombre2, estrategia2);
     }
 
-    // Método para elegir estrategia
+    // Método que se desarrollo para elegir estrategia
     private EstrategiaAtaque elegirEstrategia() {
+        //Opciones de ataque
         System.out.println("1. Ataque Agresivo (20-35 daño)");
         System.out.println("2. Ataque Defensivo (15-20 daño)");
         System.out.println("3. Ataque Balanceado (10-30 daño)");
@@ -36,26 +37,27 @@ public class JuegoLucha {
         int opcion = scanner.nextInt();
         scanner.nextLine(); // Limpiar buffer
 
-        switch (opcion) {
-            case 1:
-                return new AtaqueAgresivo();
-            case 2:
-                return new AtaqueDefensivo();
-            case 3:
-                return new AtaqueBalanceado();
-            case 4:
-                return new AtaqueCritico();
-            default:
-                return new AtaqueBalanceado();
-        }
+
+
+        // Uso de la nueva sentencia  switch de java
+         return switch (opcion)
+        {
+            case  1 ->    new AtaqueAgresivo();
+            case  2 ->   new AtaqueDefensivo();
+            case  3 ->   new AtaqueBalanceado();
+            case  4 ->   new AtaqueCritico();
+            default ->   new AtaqueBalanceado();
+        };
+
+
     }
 
     // Método para iniciar la pelea
     public void iniciarPelea() {
-        System.out.println("\n===========================================");
+        System.out.println("\n___________________________________________");
         System.out.println("La pelea comienza entre " + jugador1.getNombre() +
                 " y " + jugador2.getNombre() + "!");
-        System.out.println("===========================================\n");
+        System.out.println("___________________________________________\n");
 
         int turno = 1;
         while (jugador1.estaVivo() && jugador2.estaVivo()) {
@@ -74,13 +76,13 @@ public class JuegoLucha {
         }
 
         // Mostrar el ganador
-        System.out.println("===========================================");
+        System.out.println("___________________________________________");
         if (jugador1.estaVivo()) {
             System.out.println(" " + jugador1.getNombre() + " ha ganado la pelea!");
         } else {
             System.out.println(" " + jugador2.getNombre() + " ha ganado la pelea!");
         }
-        System.out.println("===========================================");
+        System.out.println("___________________________________________");
     }
 
     // Método que representa un turno

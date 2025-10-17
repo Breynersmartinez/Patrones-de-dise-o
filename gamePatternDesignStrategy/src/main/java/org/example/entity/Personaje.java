@@ -26,7 +26,8 @@ public class Personaje   {
 
     // Método para atacar usando la estrategia actual
     public void atacar(Personaje oponente) {
-        int dano = estrategia.calcularDano(); // Delega el cálculo a la estrategia
+        int dano = estrategia.calcularDano(); // Entonces Delega el calculo a la estrategi
+        // entonces el oponente recibe el daño
         oponente.recibirDano(dano);
         System.out.println(this.nombre + " usa " + estrategia.getNombreEstrategia() +
                 " contra " + oponente.getNombre() + " causando " +
@@ -55,6 +56,8 @@ public class Personaje   {
         return this.puntosDeVida;
     }
 
+
+    //Se trae la estrategia Actual utilizada por el personaje
     public String getEstrategiaActual() {
         return estrategia.getNombreEstrategia();
     }

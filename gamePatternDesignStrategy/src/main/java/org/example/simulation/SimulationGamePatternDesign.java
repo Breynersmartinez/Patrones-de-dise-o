@@ -14,9 +14,9 @@ public class SimulationGamePatternDesign {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("===========================================");
-        System.out.println("   JUEGO DE LUCHA - PATRÓN STRATEGY");
-        System.out.println("===========================================\n");
+        System.out.println("_____________________________________________");
+        System.out.println("   JUEGO DE LUCHA ");
+        System.out.println("___________________________________________\n");
 
         System.out.print("Introduce el nombre del jugador 1: ");
         String nombre1 = scanner.nextLine();
